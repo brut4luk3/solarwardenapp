@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import '../../../components/skyBackground.dart';
 import '../../../translation/localization.dart';
 import 'package:solarwardenapp/translation/TranslationWidget.dart';
+import 'package:solarwardenapp/components/helpers/solarFlares/whatIsSolarFlare.dart';
+import 'package:solarwardenapp/components/helpers/solarFlares/aboutTime.dart';
+import 'package:solarwardenapp/components/helpers/solarFlares/whatIsActiveRegion.dart';
+import 'package:solarwardenapp/components/helpers/solarFlares/whatIsClassTypes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -12,16 +16,26 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
-  void _showPopup(BuildContext context, String title, String message) {
+  void _showPopup(BuildContext context, String title, Widget content) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(title),
-          content: Text(message),
+          backgroundColor: Colors.grey[900],
+          title: Text(
+            title,
+            style: const TextStyle(color: Colors.white),
+          ),
+          content: content,
           actions: <Widget>[
             TextButton(
-              child: Text("Close"),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.white12,
+                foregroundColor: Colors.white,
+              ),
+              child: Text(
+                  AppLocalizations.of(context).closePopup ?? "Close"
+              ),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -122,10 +136,10 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
         ),
-        _buildLegendButton(localization.whatAreSolarFlares ?? 'O que são Flares Solares?', context),
-        _buildLegendButton(localization.understandDates ?? 'Entenda as datas', context),
-        _buildLegendButton(localization.typesOfClasses ?? 'Quais são os tipos de classes destes eventos?', context),
-        _buildLegendButton(localization.activeRegions ?? 'O que são as regiões ativas?', context),
+        _buildLegendButton(localization.whatAreSolarFlares ?? 'O que são Flares Solares?', context, WhatIsSolarFlare()),
+        _buildLegendButton(localization.understandDates ?? 'Entenda as datas', context, AboutTime()),
+        _buildLegendButton(localization.typesOfClasses ?? 'Quais são os tipos de classes destes eventos?', context, WhatIsClassTypes()),
+        _buildLegendButton(localization.activeRegions ?? 'O que são as regiões ativas?', context, WhatIsActiveRegion()),
         const SizedBox(height: 10),
         Text(
           localization.nears ?? 'NEOs',
@@ -135,17 +149,17 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
         ),
-        _buildLegendButton(localization.whatAreNEOs ?? 'O que são NEOs?', context),
-        _buildLegendButton(localization.approachDates ?? 'Entenda as datas de aproximação', context),
-        _buildLegendButton(localization.diameter ?? 'Entenda mais sobre o diâmetro dos objetos', context),
-        _buildLegendButton(localization.relativeSpeed ?? 'Entenda mais sobre a velocidade relativa', context),
-        _buildLegendButton(localization.proximityDistances ?? 'Entenda as distâncias de proximidade', context),
-        _buildLegendButton(localization.orbitingBody ?? 'O que é o Corpo em Órbita', context),
+        _buildLegendButton(localization.whatAreNEOs ?? 'O que são NEOs?', context, const Text('Conteúdo sobre NEOs')),
+        _buildLegendButton(localization.approachDates ?? 'Entenda as datas de aproximação', context, const Text('Conteúdo sobre as datas de aproximação')),
+        _buildLegendButton(localization.diameter ?? 'Entenda mais sobre o diâmetro dos objetos', context, const Text('Conteúdo sobre o diâmetro')),
+        _buildLegendButton(localization.relativeSpeed ?? 'Entenda mais sobre a velocidade relativa', context, const Text('Conteúdo sobre a velocidade relativa')),
+        _buildLegendButton(localization.proximityDistances ?? 'Entenda as distâncias de proximidade', context, const Text('Conteúdo sobre as distâncias de proximidade')),
+        _buildLegendButton(localization.orbitingBody ?? 'O que é o Corpo em Órbita', context, const Text('Conteúdo sobre o corpo em órbita')),
       ],
     );
   }
 
-  Widget _buildLegendButton(String text, BuildContext context) {
+  Widget _buildLegendButton(String text, BuildContext context, Widget content) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: ElevatedButton(
@@ -160,7 +174,7 @@ class _HomeScreenState extends State<HomeScreen> {
           minimumSize: const Size(double.infinity, 50),
         ),
         onPressed: () {
-          _showPopup(context, text, 'teste');
+          _showPopup(context, text, content);
         },
         child: Text(
           text,
