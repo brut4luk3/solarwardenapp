@@ -7,6 +7,13 @@ import 'package:solarwardenapp/components/helpers/solarFlares/aboutTime.dart';
 import 'package:solarwardenapp/components/helpers/solarFlares/whatIsActiveRegion.dart';
 import 'package:solarwardenapp/components/helpers/solarFlares/whatIsClassTypes.dart';
 
+import 'package:solarwardenapp/components/helpers/neos/whatIsNeo.dart';
+import 'package:solarwardenapp/components/helpers/neos/whatIsOrbitingBody.dart';
+import 'package:solarwardenapp/components/helpers/neos/whatIsMissDistance.dart';
+import 'package:solarwardenapp/components/helpers/neos/aboutCloseApproachDate.dart';
+import 'package:solarwardenapp/components/helpers/neos/aboutDiameter.dart';
+import 'package:solarwardenapp/components/helpers/neos/aboutVelocity.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -149,12 +156,12 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
         ),
-        _buildLegendButton(localization.whatAreNEOs ?? 'O que são NEOs?', context, const Text('Conteúdo sobre NEOs')),
-        _buildLegendButton(localization.approachDates ?? 'Entenda as datas de aproximação', context, const Text('Conteúdo sobre as datas de aproximação')),
-        _buildLegendButton(localization.diameter ?? 'Entenda mais sobre o diâmetro dos objetos', context, const Text('Conteúdo sobre o diâmetro')),
-        _buildLegendButton(localization.relativeSpeed ?? 'Entenda mais sobre a velocidade relativa', context, const Text('Conteúdo sobre a velocidade relativa')),
-        _buildLegendButton(localization.proximityDistances ?? 'Entenda as distâncias de proximidade', context, const Text('Conteúdo sobre as distâncias de proximidade')),
-        _buildLegendButton(localization.orbitingBody ?? 'O que é o Corpo em Órbita', context, const Text('Conteúdo sobre o corpo em órbita')),
+        _buildLegendButton(localization.whatAreNEOs ?? 'O que são NEOs?', context, const WhatIsNeo()),
+        _buildLegendButton(localization.approachDates ?? 'Entenda as datas de aproximação', context, const AboutCloseApproachDate()),
+        _buildLegendButton(localization.diameter ?? 'Entenda mais sobre o diâmetro dos objetos', context, const AboutDiameter()),
+        _buildLegendButton(localization.relativeSpeed ?? 'Entenda mais sobre a velocidade relativa', context, const AboutVelocity()),
+        _buildLegendButton(localization.proximityDistances ?? 'Entenda as distâncias de proximidade', context, const WhatIsMissDistance()),
+        _buildLegendButton(localization.orbitingBody ?? 'O que é o Corpo em Órbita', context, const WhatIsOrbitingBody()),
       ],
     );
   }

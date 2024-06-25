@@ -32,7 +32,7 @@ class AppLocalizations {
       'observeNow': 'Observe now!',
       'closePopup': 'Close',
       'whatAreSolarFlaresTextPart1': 'Solar flares are sudden eruptions of electromagnetic radiation from the Sun\'s surface. These events occur when the energy stored in magnetic fields, usually above sunspots, is suddenly released.\n\n',
-      'whatAreSolarFlaresTextPart2': 'Impacts on Daily Life:\n',
+      'whatAreSolarFlaresTextPart2': 'Impacts on Daily Life:\n\n',
       'whatAreSolarFlaresTextPart3': '1. Communication Disruptions: ',
       'whatAreSolarFlaresTextPart4': 'Solar flares can cause interference in high-frequency radio communications and satellite communications.\n',
       'whatAreSolarFlaresTextPart5': '2. Geomagnetic Storms: ',
@@ -72,6 +72,60 @@ class AppLocalizations {
       'whatIsClassTypesTextPart12': 'These are the largest flares, capable of causing planet-wide radio blackouts and long-lasting radiation storms.\n',
       'scaleExplanation': 'In our reports, we display the scales as follows:',
       'scaleExplanationDetail': 'Being:\n\nR1 = No risk\nR2 = Moderate risk\nR3 = Concerning risk\nR4 = High risk\nR5 = Maximum alert',
+      'whatIsNeoTextPart1': 'A Near-Earth Object (NEO) is any small Solar System body whose orbit brings it into proximity with Earth. These objects include asteroids and comets that could potentially collide with Earth.\n\n',
+      'whatIsNeoTextPart2': 'Categories of NEOs:\n\n',
+      'whatIsNeoTextPart3': '1. Near-Earth Asteroids (NEAs): ',
+      'whatIsNeoTextPart4': 'These are asteroids that have orbits that bring them close to Earth.\n',
+      'whatIsNeoTextPart5': '2. Near-Earth Comets (NECs): ',
+      'whatIsNeoTextPart6': 'These are comets with orbits that come close to Earth. They are less common than NEAs.\n',
+      'whatIsNeoTextPart7': '3. Potentially Hazardous Objects (PHOs): ',
+      'whatIsNeoTextPart8': 'These are NEOs that pose a significant risk of impacting Earth due to their size and proximity to our planet.\n',
+      'whatIsMissDistanceTextPart1': 'Miss distance is a measure of the closest distance that a Near-Earth Object (NEO) will approach Earth. It is a crucial metric for assessing the potential hazard of an NEO.\n\n',
+      'whatIsMissDistanceTextPart2': 'Units of Measurement:\n\n',
+      'whatIsMissDistanceTextPart3': '1. Astronomical Units (AU): ',
+      'whatIsMissDistanceTextPart4': '1 AU is the average distance between the Earth and the Sun, approximately 149.6 million kilometers.\n',
+      'whatIsMissDistanceTextPart5': '2. Lunar Distances (LD): ',
+      'whatIsMissDistanceTextPart6': '1 LD is the average distance from the Earth to the Moon, approximately 384,400 kilometers.\n',
+      'whatIsMissDistanceTextPart7': '3. Kilometers (km): ',
+      'whatIsMissDistanceTextPart8': 'Miss distance can also be measured in kilometers for more precision.\n\n',
+      'whatIsMissDistanceTextPart9': 'Significance of Miss Distance:\n\n',
+      'whatIsMissDistanceTextPart10': 'A smaller miss distance indicates a higher risk of impact. Therefore, monitoring the miss distance of NEOs is essential for planetary defense.\n',
+      'aboutVelocityTextPart1': 'The velocity of a Near-Earth Object (NEO) is a critical parameter for understanding its potential impact. It is typically measured in kilometers per hour (km/h).\n\n',
+      'aboutVelocityTextPart2': 'Understanding Velocity:\n\n',
+      'aboutVelocityTextPart3': '1. Relative Velocity: ',
+      'aboutVelocityTextPart4': 'This is the speed of the NEO relative to Earth as it passes by.\n',
+      'aboutVelocityTextPart5': '2. High Velocity: ',
+      'aboutVelocityTextPart6': 'NEOs with high velocities can cause more significant damage if they impact Earth due to the greater energy released upon impact.\n',
+      'aboutVelocityTextPart7': '3. Low Velocity: ',
+      'aboutVelocityTextPart8': 'NEOs with lower velocities may cause less damage, but they are still dangerous and need to be monitored closely.\n\n',
+      'aboutVelocityTextPart9': 'Importance of Monitoring Velocity:\n\n',
+      'aboutVelocityTextPart10': 'By understanding the velocity of NEOs, scientists can better predict their paths and potential impact effects, improving planetary defense strategies.\n',
+      'whatIsOrbitingBodyTextPart1': 'An orbiting body refers to any celestial object that is in orbit around another object. In the context of Near-Earth Objects (NEOs), the primary orbiting body of interest is the Earth.\n\n',
+      'whatIsOrbitingBodyTextPart2': 'Types of Orbiting Bodies:\n\n',
+      'whatIsOrbitingBodyTextPart3': '1. Natural Satellites: ',
+      'whatIsOrbitingBodyTextPart4': 'These include moons, like Earth\'s Moon, that orbit planets.\n',
+      'whatIsOrbitingBodyTextPart5': '2. Artificial Satellites: ',
+      'whatIsOrbitingBodyTextPart6': 'These are man-made objects placed into orbit, such as the International Space Station (ISS).\n',
+      'whatIsOrbitingBodyTextPart7': '3. Planets: ',
+      'whatIsOrbitingBodyTextPart8': 'Planets, including Earth, orbit around the Sun.\n\n',
+      'whatIsOrbitingBodyTextPart9': 'Significance of Orbiting Bodies:\n\n',
+      'whatIsOrbitingBodyTextPart10': 'Understanding the orbiting bodies helps in predicting the paths of NEOs and assessing potential collision risks with Earth or other celestial objects.\n',
+      'aboutDiameterTextPart1': 'The diameter of a Near-Earth Object (NEO) is a crucial parameter for assessing its potential impact. It is typically measured in meters (m).\n\n',
+      'aboutDiameterTextPart2': 'Understanding Diameter:\n\n',
+      'aboutDiameterTextPart3': '1. Size Matters: ',
+      'aboutDiameterTextPart4': 'Larger NEOs have the potential to cause more significant damage due to the greater mass and energy involved in an impact.\n',
+      'aboutDiameterTextPart5': '2. Detection Challenges: ',
+      'aboutDiameterTextPart6': 'Smaller NEOs are harder to detect and track but can still pose a threat if they enter Earth\'s atmosphere.\n',
+      'aboutDiameterTextPart7': '3. Impact Assessment: ',
+      'aboutDiameterTextPart8': 'Knowing the diameter helps scientists estimate the potential impact effects, including crater size and energy release.\n\n',
+      'aboutDiameterTextPart9': 'Significance of Diameter Measurement:\n\n',
+      'aboutDiameterTextPart10': 'By measuring the diameter of NEOs, scientists can better predict their behavior and potential impact, enhancing planetary defense strategies.\n',
+      'aboutCloseApproachDateTextPart1': 'The close approach date of a Near-Earth Object (NEO) is the date on which the object will come closest to Earth. This information is crucial for assessing potential impact risks and preparing any necessary defensive measures.\n\n',
+      'aboutCloseApproachDateTextPart2': 'Notable Close Approach:\n\n',
+      'aboutCloseApproachDateTextPart3': 'Asteroid Apophis: ',
+      'aboutCloseApproachDateTextPart4': 'Apophis is a well-known NEO that will have a close approach to Earth on April 13, 2029. During this approach, Apophis will come within 31,000 kilometers of Earth, which is closer than the distance of geostationary satellites.\n\n',
+      'aboutCloseApproachDateTextPart5': 'Significance of Apophis\' Close Approach:\n\n',
+      'aboutCloseApproachDateTextPart6': 'The 2029 approach of Apophis will be a unique opportunity for scientists to study this asteroid up close, providing valuable data to improve our understanding of NEOs and their potential threats.\n',
     },
     'pt': {
       'eye_in_the_sky': 'De Olho no Céu',
@@ -95,7 +149,7 @@ class AppLocalizations {
       'observeNow': 'Observe agora!',
       'closePopup': 'Fechar',
       'whatAreSolarFlaresTextPart1': 'Flares solares são erupções repentinas de radiação eletromagnética da superfície do Sol. Esses eventos ocorrem quando a energia armazenada em campos magnéticos, geralmente acima de manchas solares, é liberada subitamente.\n\n',
-      'whatAreSolarFlaresTextPart2': 'Impactos no Dia a Dia:\n',
+      'whatAreSolarFlaresTextPart2': 'Impactos no Dia a Dia:\n\n',
       'whatAreSolarFlaresTextPart3': '1. Disrupções em Comunicações: ',
       'whatAreSolarFlaresTextPart4': 'Flares solares podem causar interferências nas comunicações por rádio de alta frequência e nas comunicações por satélite.\n',
       'whatAreSolarFlaresTextPart5': '2. Tempestades Geomagnéticas: ',
@@ -135,6 +189,60 @@ class AppLocalizations {
       'whatIsClassTypesTextPart12': 'Esses são os maiores flares, capazes de causar apagões de rádio em todo o planeta e tempestades de radiação duradouras.\n',
       'scaleExplanation': 'Em nossos relatórios, exibimos as escalas da seguinte forma:',
       'scaleExplanationDetail': 'Sendo:\n\nR1 = Sem riscos\nR2 = Risco moderado\nR3 = Risco preocupante\nR4 = Risco alto\nR5 = Alerta máximo',
+      'whatIsNeoTextPart1': 'Um Objeto Próximo à Terra (NEO) é qualquer pequeno corpo do Sistema Solar cuja órbita o traz para perto da Terra. Esses objetos incluem asteroides e cometas que poderiam potencialmente colidir com a Terra.\n\n',
+      'whatIsNeoTextPart2': 'Categorias de NEOs:\n\n',
+      'whatIsNeoTextPart3': '1. Asteroides Próximos à Terra (NEAs): ',
+      'whatIsNeoTextPart4': 'Estes são asteroides cujas órbitas os trazem perto da Terra.\n',
+      'whatIsNeoTextPart5': '2. Cometas Próximos à Terra (NECs): ',
+      'whatIsNeoTextPart6': 'Estes são cometas com órbitas que se aproximam da Terra. Eles são menos comuns que os NEAs.\n',
+      'whatIsNeoTextPart7': '3. Objetos Potencialmente Perigosos (PHOs): ',
+      'whatIsNeoTextPart8': 'Estes são NEOs que apresentam um risco significativo de impacto com a Terra devido ao seu tamanho e proximidade com o nosso planeta.\n',
+      'whatIsMissDistanceTextPart1': 'A distância de passagem é uma medida da distância mais próxima que um Objeto Próximo à Terra (NEO) se aproximará da Terra. É uma métrica crucial para avaliar o risco potencial de um NEO.\n\n',
+      'whatIsMissDistanceTextPart2': 'Unidades de Medida:\n\n',
+      'whatIsMissDistanceTextPart3': '1. Unidades Astronômicas (UA): ',
+      'whatIsMissDistanceTextPart4': '1 UA é a distância média entre a Terra e o Sol, aproximadamente 149,6 milhões de quilômetros.\n',
+      'whatIsMissDistanceTextPart5': '2. Distâncias Lunares (DL): ',
+      'whatIsMissDistanceTextPart6': '1 DL é a distância média da Terra à Lua, aproximadamente 384.400 quilômetros.\n',
+      'whatIsMissDistanceTextPart7': '3. Quilômetros (km): ',
+      'whatIsMissDistanceTextPart8': 'A distância de passagem também pode ser medida em quilômetros para mais precisão.\n\n',
+      'whatIsMissDistanceTextPart9': 'Significado da Distância de Passagem:\n\n',
+      'whatIsMissDistanceTextPart10': 'Uma distância de passagem menor indica um risco maior de impacto. Portanto, monitorar a distância de passagem dos NEOs é essencial para a defesa planetária.\n',
+      'aboutVelocityTextPart1': 'A velocidade de um Objeto Próximo à Terra (NEO) é um parâmetro crítico para entender seu impacto potencial. Geralmente é medida em quilômetros por hora (km/h).\n\n',
+      'aboutVelocityTextPart2': 'Entendendo a Velocidade:\n\n',
+      'aboutVelocityTextPart3': '1. Velocidade Relativa: ',
+      'aboutVelocityTextPart4': 'Esta é a velocidade do NEO em relação à Terra à medida que passa por aqui.\n',
+      'aboutVelocityTextPart5': '2. Alta Velocidade: ',
+      'aboutVelocityTextPart6': 'NEOs com altas velocidades podem causar danos mais significativos se impactarem a Terra devido à maior energia liberada no impacto.\n',
+      'aboutVelocityTextPart7': '3. Baixa Velocidade: ',
+      'aboutVelocityTextPart8': 'NEOs com velocidades mais baixas podem causar menos danos, mas ainda são perigosos e precisam ser monitorados de perto.\n\n',
+      'aboutVelocityTextPart9': 'Importância de Monitorar a Velocidade:\n\n',
+      'aboutVelocityTextPart10': 'Ao entender a velocidade dos NEOs, os cientistas podem prever melhor suas trajetórias e os efeitos potenciais do impacto, melhorando as estratégias de defesa planetária.\n',
+      'whatIsOrbitingBodyTextPart1': 'Um corpo em órbita refere-se a qualquer objeto celestial que está em órbita ao redor de outro objeto. No contexto dos Objetos Próximos à Terra (NEOs), o principal corpo em órbita de interesse é a Terra.\n\n',
+      'whatIsOrbitingBodyTextPart2': 'Tipos de Corpos em Órbita:\n\n',
+      'whatIsOrbitingBodyTextPart3': '1. Satélites Naturais: ',
+      'whatIsOrbitingBodyTextPart4': 'Estes incluem luas, como a Lua da Terra, que orbitam planetas.\n',
+      'whatIsOrbitingBodyTextPart5': '2. Satélites Artificiais: ',
+      'whatIsOrbitingBodyTextPart6': 'Estes são objetos feitos pelo homem colocados em órbita, como a Estação Espacial Internacional (ISS).\n',
+      'whatIsOrbitingBodyTextPart7': '3. Planetas: ',
+      'whatIsOrbitingBodyTextPart8': 'Os planetas, incluindo a Terra, orbitam ao redor do Sol.\n\n',
+      'whatIsOrbitingBodyTextPart9': 'Significado dos Corpos em Órbita:\n\n',
+      'whatIsOrbitingBodyTextPart10': 'Entender os corpos em órbita ajuda a prever as trajetórias dos NEOs e a avaliar os riscos potenciais de colisão com a Terra ou outros objetos celestiais.\n',
+      'aboutDiameterTextPart1': 'O diâmetro de um Objeto Próximo à Terra (NEO) é um parâmetro crucial para avaliar seu impacto potencial. Geralmente é medido em metros (m).\n\n',
+      'aboutDiameterTextPart2': 'Entendendo o Diâmetro:\n\n',
+      'aboutDiameterTextPart3': '1. O Tamanho Importa: ',
+      'aboutDiameterTextPart4': 'NEOs maiores têm o potencial de causar danos mais significativos devido à maior massa e energia envolvida em um impacto.\n',
+      'aboutDiameterTextPart5': '2. Desafios de Detecção: ',
+      'aboutDiameterTextPart6': 'NEOs menores são mais difíceis de detectar e rastrear, mas ainda podem representar uma ameaça se entrarem na atmosfera da Terra.\n',
+      'aboutDiameterTextPart7': '3. Avaliação de Impacto: ',
+      'aboutDiameterTextPart8': 'Conhecer o diâmetro ajuda os cientistas a estimar os efeitos potenciais do impacto, incluindo o tamanho da cratera e a liberação de energia.\n\n',
+      'aboutDiameterTextPart9': 'Significado da Medição do Diâmetro:\n\n',
+      'aboutDiameterTextPart10': 'Medindo o diâmetro dos NEOs, os cientistas podem prever melhor seu comportamento e impacto potencial, aprimorando as estratégias de defesa planetária.\n',
+      'aboutCloseApproachDateTextPart1': 'A data de aproximação de um Objeto Próximo à Terra (NEO) é a data em que o objeto estará mais próximo da Terra. Esta informação é crucial para avaliar os riscos potenciais de impacto e preparar quaisquer medidas defensivas necessárias.\n\n',
+      'aboutCloseApproachDateTextPart2': 'Aproximação Notável:\n\n',
+      'aboutCloseApproachDateTextPart3': 'Asteroide Apophis: ',
+      'aboutCloseApproachDateTextPart4': 'Apophis é um NEO bem conhecido que terá uma aproximação próxima da Terra em 13 de abril de 2029. Durante essa aproximação, Apophis chegará a 31.000 quilômetros da Terra, que é mais próximo do que a distância dos satélites geoestacionários.\n\n',
+      'aboutCloseApproachDateTextPart5': 'Significado da Aproximação de Apophis:\n\n',
+      'aboutCloseApproachDateTextPart6': 'A aproximação de Apophis em 2029 será uma oportunidade única para os cientistas estudarem este asteroide de perto, fornecendo dados valiosos para melhorar nossa compreensão dos NEOs e suas ameaças potenciais.\n',
     },
   };
 
@@ -380,6 +488,222 @@ class AppLocalizations {
 
   String? get scaleExplanationDetail {
     return _localizedValues[locale.languageCode]!['scaleExplanationDetail'];
+  }
+
+  String? get whatIsNeoTextPart1 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart1'];
+  }
+
+  String? get whatIsNeoTextPart2 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart2'];
+  }
+
+  String? get whatIsNeoTextPart3 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart3'];
+  }
+
+  String? get whatIsNeoTextPart4 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart4'];
+  }
+
+  String? get whatIsNeoTextPart5 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart5'];
+  }
+
+  String? get whatIsNeoTextPart6 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart6'];
+  }
+
+  String? get whatIsNeoTextPart7 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart7'];
+  }
+
+  String? get whatIsNeoTextPart8 {
+    return _localizedValues[locale.languageCode]!['whatIsNeoTextPart8'];
+  }
+
+  String? get whatIsMissDistanceTextPart1 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart1'];
+  }
+
+  String? get whatIsMissDistanceTextPart2 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart2'];
+  }
+
+  String? get whatIsMissDistanceTextPart3 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart3'];
+  }
+
+  String? get whatIsMissDistanceTextPart4 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart4'];
+  }
+
+  String? get whatIsMissDistanceTextPart5 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart5'];
+  }
+
+  String? get whatIsMissDistanceTextPart6 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart6'];
+  }
+
+  String? get whatIsMissDistanceTextPart7 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart7'];
+  }
+
+  String? get whatIsMissDistanceTextPart8 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart8'];
+  }
+
+  String? get whatIsMissDistanceTextPart9 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart9'];
+  }
+
+  String? get whatIsMissDistanceTextPart10 {
+    return _localizedValues[locale.languageCode]!['whatIsMissDistanceTextPart10'];
+  }
+
+  String? get aboutVelocityTextPart1 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart1'];
+  }
+
+  String? get aboutVelocityTextPart2 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart2'];
+  }
+
+  String? get aboutVelocityTextPart3 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart3'];
+  }
+
+  String? get aboutVelocityTextPart4 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart4'];
+  }
+
+  String? get aboutVelocityTextPart5 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart5'];
+  }
+
+  String? get aboutVelocityTextPart6 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart6'];
+  }
+
+  String? get aboutVelocityTextPart7 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart7'];
+  }
+
+  String? get aboutVelocityTextPart8 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart8'];
+  }
+
+  String? get aboutVelocityTextPart9 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart9'];
+  }
+
+  String? get aboutVelocityTextPart10 {
+    return _localizedValues[locale.languageCode]!['aboutVelocityTextPart10'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart1 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart1'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart2 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart2'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart3 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart3'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart4 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart4'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart5 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart5'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart6 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart6'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart7 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart7'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart8 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart8'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart9 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart9'];
+  }
+
+  String? get whatIsOrbitingBodyTextPart10 {
+    return _localizedValues[locale.languageCode]!['whatIsOrbitingBodyTextPart10'];
+  }
+
+  String? get aboutDiameterTextPart1 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart1'];
+  }
+
+  String? get aboutDiameterTextPart2 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart2'];
+  }
+
+  String? get aboutDiameterTextPart3 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart3'];
+  }
+
+  String? get aboutDiameterTextPart4 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart4'];
+  }
+
+  String? get aboutDiameterTextPart5 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart5'];
+  }
+
+  String? get aboutDiameterTextPart6 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart6'];
+  }
+
+  String? get aboutDiameterTextPart7 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart7'];
+  }
+
+  String? get aboutDiameterTextPart8 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart8'];
+  }
+
+  String? get aboutDiameterTextPart9 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart9'];
+  }
+
+  String? get aboutDiameterTextPart10 {
+    return _localizedValues[locale.languageCode]!['aboutDiameterTextPart10'];
+  }
+
+  String? get aboutCloseApproachDateTextPart1 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart1'];
+  }
+
+  String? get aboutCloseApproachDateTextPart2 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart2'];
+  }
+
+  String? get aboutCloseApproachDateTextPart3 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart3'];
+  }
+
+  String? get aboutCloseApproachDateTextPart4 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart4'];
+  }
+
+  String? get aboutCloseApproachDateTextPart5 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart5'];
+  }
+
+  String? get aboutCloseApproachDateTextPart6 {
+    return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart6'];
   }
 }
 
