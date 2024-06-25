@@ -1,34 +1,8 @@
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import '../../../constants/constants.dart';
-import '../../../services/api/nasa/neo.dart';
+import 'package:solarwardenapp/services/api/nasa/neo.dart';
+import 'package:solarwardenapp/services/utils/utils.dart';
 
-String checkNull(dynamic value) {
-  return value == null ? 'N/A' : value.toString();
-}
-
-Future<List<Map<String, dynamic>>> fetchData() async {
-  final now = DateTime.now();
-  final startOfWeek = now.subtract(Duration(days: now.weekday % 7));
-  final startDate = '${startOfWeek.year}-${startOfWeek.month.toString().padLeft(2, '0')}-${startOfWeek.day.toString().padLeft(2, '0')}';
-  final endDate = '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
-
-  final url = Uri.parse('$nasaApiUrl?startDate=$startDate&endDate=$endDate&api_key=$nasaApiKey');
-
-  final response = await http.get(url, headers: {'accept': 'application/json'});
-
-  if (response.statusCode == 200) {
-    final data = jsonDecode(response.body) as List;
-    return data.map((item) {
-      return item as Map<String, dynamic>;
-    }).toList();
-  } else {
-    throw Exception('Failed to load data');
-  }
-}
-
-Future<List<Map<String, dynamic>>> fetchNEOData() async {
-  final data = await fetchNEOApiData();
+Future<List<Map<String, dynamic>>> fetchNEOData(String startDate, String endDate) async {
+  final data = await fetchNEOApiDataWithDates(startDate, endDate);
   List<Map<String, dynamic>> neoList = [];
   (data['near_earth_objects'] as Map<String, dynamic>).forEach((date, neos) {
     (neos as List<dynamic>).forEach((neo) {
@@ -60,7 +34,7 @@ Future<List<Map<String, dynamic>>> fetchNEOData() async {
           'is_potentially_hazardous_asteroid': checkNull(neo['is_potentially_hazardous_asteroid']),
           'close_approach_data': (neo['close_approach_data'] as List<dynamic>).map((cad) {
             return {
-              'close_approach_date': checkNull(cad['close_approach_date']),
+              'close_approach_date': checkNull(convertDateToBrazilianTimezone(cad['close_approach_date'])),
               'close_approach_date_full': checkNull(cad['close_approach_date_full']),
               'epoch_date_close_approach': checkNull(cad['epoch_date_close_approach']),
               'relative_velocity': {
@@ -83,4 +57,8 @@ Future<List<Map<String, dynamic>>> fetchNEOData() async {
     });
   });
   return neoList;
+}
+
+String checkNull(dynamic value) {
+  return value?.toString() ?? 'N/A';
 }

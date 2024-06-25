@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:solarwardenapp/translation/localization.dart';
 
-class HomeCard extends StatelessWidget {
+class SolarFlareCard extends StatelessWidget {
   final Map<String, dynamic> item;
 
-  const HomeCard({Key? key, required this.item}) : super(key: key);
+  const SolarFlareCard({Key? key, required this.item}) : super(key: key);
 
   String formatDate(String? dateStr) {
     if (dateStr == null) return 'N/A';
-    DateTime date = DateTime.parse(dateStr);
+    DateTime date = DateTime.parse(dateStr).toLocal();
     return DateFormat('yyyy/MM/dd - HH:mm').format(date);
   }
 
@@ -152,6 +153,8 @@ class HomeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localization = AppLocalizations.of(context);
+
     return Card(
       color: Colors.grey[900],
       margin: const EdgeInsets.symmetric(vertical: 8.0),
@@ -166,7 +169,7 @@ class HomeCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Class Type ${item['classType'] ?? 'N/A'}',
+                    '${localization.classType}: ${item['classType'] ?? 'N/A'}',
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -182,7 +185,7 @@ class HomeCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Begin Time: ',
+                    localization.beginTime ?? 'Begin Time',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -200,7 +203,7 @@ class HomeCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Peak Time: ',
+                    localization.peakTime ?? 'Peak Time',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -218,7 +221,7 @@ class HomeCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'End Time: ',
+                    localization.endTime ?? 'End Time',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -236,7 +239,7 @@ class HomeCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Location: ',
+                    localization.location ?? 'Location',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(

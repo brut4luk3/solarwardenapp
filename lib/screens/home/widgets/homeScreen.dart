@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../components/skyBackground.dart';
 import '../../../translation/localization.dart';
+import '../../neo/widgets/neoScreen.dart';
+import '../../solarflare/widgets/solarFlareScreen.dart';
 import 'package:solarwardenapp/translation/TranslationWidget.dart';
 import 'package:solarwardenapp/components/helpers/solarFlares/whatIsSolarFlare.dart';
 import 'package:solarwardenapp/components/helpers/solarFlares/aboutTime.dart';
@@ -224,7 +226,18 @@ class _HomeScreenState extends State<HomeScreen> {
               minimumSize: const Size(double.infinity, 80),
             ),
             onPressed: () {
-              // Define actions here if needed
+              if (isNeo) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NeoScreen()),
+                );
+              };
+              if (isSolarFlare) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SolarFlareScreen())
+                );
+              }
             },
             child: Text(
               text,

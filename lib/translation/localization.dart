@@ -126,6 +126,22 @@ class AppLocalizations {
       'aboutCloseApproachDateTextPart4': 'Apophis is a well-known NEO that will have a close approach to Earth on April 13, 2029. During this approach, Apophis will come within 31,000 kilometers of Earth, which is closer than the distance of geostationary satellites.\n\n',
       'aboutCloseApproachDateTextPart5': 'Significance of Apophis\' Close Approach:\n\n',
       'aboutCloseApproachDateTextPart6': 'The 2029 approach of Apophis will be a unique opportunity for scientists to study this asteroid up close, providing valuable data to improve our understanding of NEOs and their potential threats.\n',
+      'potentiallyHazardousNEOs': 'Potentially Hazardous NEOs',
+      'selectPeriod': 'Select a period to view the data',
+      'noEvents': 'No events in the selected period...',
+      'name': 'Name',
+      'estimatedDiameter': 'Estimated Diameter:',
+      'min': 'Min',
+      'max': 'Max',
+      'closeApproachDate': 'Close Approach Date:',
+      'relativeVelocity': 'Relative Velocity:',
+      'missDistance': 'Miss Distance:',
+      'orbiting_card': 'Orbiting Body:',
+      "classType": "Class Type",
+      "beginTime": "Begin Time",
+      "peakTime": "Peak Time",
+      "endTime": "End Time",
+      "location": "Location"
     },
     'pt': {
       'eye_in_the_sky': 'De Olho no Céu',
@@ -243,6 +259,22 @@ class AppLocalizations {
       'aboutCloseApproachDateTextPart4': 'Apophis é um NEO bem conhecido que terá uma aproximação próxima da Terra em 13 de abril de 2029. Durante essa aproximação, Apophis chegará a 31.000 quilômetros da Terra, que é mais próximo do que a distância dos satélites geoestacionários.\n\n',
       'aboutCloseApproachDateTextPart5': 'Significado da Aproximação de Apophis:\n\n',
       'aboutCloseApproachDateTextPart6': 'A aproximação de Apophis em 2029 será uma oportunidade única para os cientistas estudarem este asteroide de perto, fornecendo dados valiosos para melhorar nossa compreensão dos NEOs e suas ameaças potenciais.\n',
+      'potentiallyHazardousNEOs': 'NEOs Potencialmente Perigosos',
+      'selectPeriod': 'Selecione um período para visualizar os dados',
+      'noEvents': 'Nenhum evento no período escolhido...',
+      'name': 'Nome',
+      'estimatedDiameter': 'Diâmetro Estimado:',
+      'min': 'Mín',
+      'max': 'Máx',
+      'closeApproachDate': 'Data de Aproximação:',
+      'relativeVelocity': 'Velocidade Relativa:',
+      'missDistance': 'Distância de Passagem:',
+      'orbiting_card': 'Corpo Orbitante:',
+      "classType": "Tipo de Classe",
+      "beginTime": "Hora de Início",
+      "peakTime": "Hora de Pico",
+      "endTime": "Hora de Fim",
+      "location": "Localização"
     },
   };
 
@@ -704,6 +736,70 @@ class AppLocalizations {
 
   String? get aboutCloseApproachDateTextPart6 {
     return _localizedValues[locale.languageCode]!['aboutCloseApproachDateTextPart6'];
+  }
+
+  String? get potentiallyHazardousNEOs {
+    return _localizedValues[locale.languageCode]!['potentiallyHazardousNEOs'];
+  }
+
+  String? get selectPeriod {
+    return _localizedValues[locale.languageCode]!['selectPeriod'];
+  }
+
+  String? get noEvents {
+    return _localizedValues[locale.languageCode]!['noEvents'];
+  }
+
+  String? get name {
+    return _localizedValues[locale.languageCode]!['name'];
+  }
+
+  String? get estimatedDiameter {
+    return _localizedValues[locale.languageCode]!['estimatedDiameter'];
+  }
+
+  String? get min {
+    return _localizedValues[locale.languageCode]!['min'];
+  }
+
+  String? get max {
+    return _localizedValues[locale.languageCode]!['max'];
+  }
+
+  String? get closeApproachDate {
+    return _localizedValues[locale.languageCode]!['closeApproachDate'];
+  }
+
+  String? get relativeVelocity {
+    return _localizedValues[locale.languageCode]!['relativeVelocity'];
+  }
+
+  String? get missDistance {
+    return _localizedValues[locale.languageCode]!['missDistance'];
+  }
+
+  String? get orbiting_card {
+    return _localizedValues[locale.languageCode]!['orbiting_card'];
+  }
+
+  String? get classType {
+    return _localizedValues[locale.languageCode]!['classType'];
+  }
+
+  String? get beginTime {
+    return _localizedValues[locale.languageCode]!['beginTime'];
+  }
+
+  String? get peakTime {
+    return _localizedValues[locale.languageCode]!['peakTime'];
+  }
+
+  String? get endTime {
+    return _localizedValues[locale.languageCode]!['endTime'];
+  }
+
+  String? get location {
+    return _localizedValues[locale.languageCode]!['location'];
   }
 }
 

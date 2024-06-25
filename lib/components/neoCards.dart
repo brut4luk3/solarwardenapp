@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:solarwardenapp/translation/localization.dart';
 
 class NeoCard extends StatelessWidget {
   final Map<String, dynamic> item;
@@ -25,6 +26,7 @@ class NeoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localization = AppLocalizations.of(context);
     final neoData = item['close_approach_data'][0];
     final estimatedDiameter = item['estimated_diameter']['meters'];
     final relativeVelocity = double.parse(neoData['relative_velocity']['kilometers_per_hour']);
@@ -44,7 +46,7 @@ class NeoCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Name: ${item['name']}',
+                    '${localization.name ?? 'Name'}: ${item['name']}',
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -60,11 +62,11 @@ class NeoCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Estimated Diameter:',
+                    localization.estimatedDiameter ?? 'Estimated Diameter:',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
-                    'Min: ${formatNumber(estimatedDiameter['estimated_diameter_min'])} m, Max: ${formatNumber(estimatedDiameter['estimated_diameter_max'])} m',
+                    '${localization.min ?? 'Min'}: ${formatNumber(estimatedDiameter['estimated_diameter_min'])} m, ${localization.max ?? 'Max'}: ${formatNumber(estimatedDiameter['estimated_diameter_max'])} m',
                     style: const TextStyle(
                       color: Colors.white,
                       shadows: [
@@ -78,7 +80,7 @@ class NeoCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Close Approach Date:',
+                    localization.closeApproachDate ?? 'Close Approach Date:',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -96,7 +98,7 @@ class NeoCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Relative Velocity:',
+                    localization.relativeVelocity ?? 'Relative Velocity:',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -114,7 +116,7 @@ class NeoCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Miss Distance:',
+                    localization.missDistance ?? 'Miss Distance:',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
@@ -132,7 +134,7 @@ class NeoCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Orbiting Body:',
+                    localization.orbiting_card ?? 'Orbiting Body:',
                     style: const TextStyle(color: Colors.yellow),
                   ),
                   Text(
